@@ -62,8 +62,9 @@ def save_order_to_database(db_session: Session, data):
 
 def inline_button():
     channel_url = InlineKeyboardButton('Kanalimiz', url='https://t.me/rekord_m1r')
+    channel_url1 = InlineKeyboardButton('Kanalimiz', url='https://t.me/sherobodmatbuotxizmati')
     check = InlineKeyboardButton('Tekshirish', callback_data='subdone')
-    markab = InlineKeyboardMarkup(row_width=1).add(channel_url, check)
+    markab = InlineKeyboardMarkup(row_width=1).add(channel_url,channel_url1, check)
     return markab
 
 
